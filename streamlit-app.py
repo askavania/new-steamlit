@@ -63,7 +63,8 @@ def app():
 
     # If an image is uploaded, make a prediction with the model
     if uploaded_file is not None:
-        class_name = predict(model, uploaded_file)      
+        class_name = predict(model, uploaded_file) 
+        image = uploaded_file
 #         image = Image.open(uploaded_file)
 #         image_tensor = transform(image).unsqueeze(0)
         
