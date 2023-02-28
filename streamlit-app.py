@@ -8,7 +8,7 @@ import torchvision.transforms as transforms
 # Load the saved PyTorch model
 # model_str = open('NO2_model.pkl', 'rb').read()
 # model = nn.Sequential(*pickle.loads(model_str))
-model = torch.load('EfficientNet_B4NO2Model.pt')
+model = torch.load('EfficientNet_B4NO2Model.pt', map_location='cpu')
 
 # Define a function to make predictions with the trained model
 def predict(model, image_path):
