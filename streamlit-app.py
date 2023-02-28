@@ -20,7 +20,7 @@ def predict(model, image_path):
     ])
     image = Image.open(image_path)
     image = transform(image).unsqueeze(0)
-    image = image.to(device)
+    #image = image.to(device)
 
     # Make a prediction with the trained model
     model.eval()
